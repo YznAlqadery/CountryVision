@@ -173,9 +173,8 @@ body.dark-mode,
 
 @media screen and (width <=600px) {
   .search__wrapper {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .search__input {
     width: 95%;
@@ -192,6 +191,9 @@ body.dark-mode,
   }
   .country__details {
     padding: 1rem;
+  }
+  .country__selected {
+    grid-template-columns: 1fr;
   }
   .country__name {
     font-size: 1.6rem;
@@ -224,10 +226,6 @@ body.dark-mode,
   .country__name {
     font-size: 1.4rem;
   }
-  .country__selected {
-    grid-template-columns: 1fr;
-  }
-
   .country-selected__flag {
     height: 150px;
   }
