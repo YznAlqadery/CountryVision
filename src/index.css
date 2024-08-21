@@ -93,6 +93,7 @@ body.dark-mode,
   font-family: inherit;
   font-size: 1rem;
   cursor: pointer;
+  color: inherit;
 }
 
 .countries__list {
@@ -214,7 +215,7 @@ body.dark-mode,
 
 @media screen and (width <=490px) {
   .countries__list {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: 1fr;
   }
 
   .country__details {
@@ -256,9 +257,6 @@ body.dark-mode,
 }
 
 @media screen and (width <=360px) {
-  .countries__list {
-    grid-template-columns: 1fr;
-  }
   .country__details {
     padding: 0.5rem;
   }
