@@ -173,8 +173,9 @@ body.dark-mode,
 
 @media screen and (width <=600px) {
   .search__wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
   }
   .search__input {
     width: 95%;
